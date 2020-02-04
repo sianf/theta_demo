@@ -1,6 +1,7 @@
 /* psv.css - Photo Sphere Viewer関係 */
+
 #viewer {
     margin: 0 auto;
-    width: 70vw;
-    height: 40vh;
+    width: 100vw;
+    height: 100vh;
 }

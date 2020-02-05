@@ -1,1 +1,12 @@
 /* common.css - 共通CSS */
+
+.thumbnail {
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.thumbnail button {
+    width: 30vw;
+    height: 5vh;
+}

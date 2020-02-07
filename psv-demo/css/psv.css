@@ -1,7 +1,12 @@
 /* psv.css - Photo Sphere Viewer関係 */
 
+@media screen and (min-width: 48em) {
+    #viewer {
+        box-shadow: 0 2px 8px #555;
+    }
+}
+
 #viewer {
-    box-shadow: 0 2px 8px #555;
     width: 100%;
     height: 70vh;
     max-height: 640px;

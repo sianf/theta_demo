@@ -1,21 +1,25 @@
 /* common.css - 共通CSS */
 
+/* md以上の時 */
+@media screen and (min-width: 48em) {
+    .viewer-container {
+        padding-left: 1rem;
+    }
+
+    .links-container {
+        padding-left: 1rem;
+    }
+}
+
 body {
     background-color: #fefefe;
 }
 
 .header {
     margin-bottom: 1rem;
-    box-shadow: 0 1px 5px #ccc;
+    box-shadow: 0 1px 2px #eee;
 }
 
-.viewer-container {
-    padding-left: 1rem;
-}
-
-.links-container {
-    padding-left: 1rem;
-}
 
 .navigation {
     width: 100%;
@@ -23,6 +27,7 @@ body {
 
 .links {
     background-color: aliceblue;
+    box-shadow: 0 0px 6px #eee;
 }
 
 .links button {

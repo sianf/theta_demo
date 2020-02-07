@@ -2,7 +2,8 @@ let PSV = new PhotoSphereViewer({
   container: 'viewer',
   panorama: '/img/' + getBasename() + String(1) + '.jpg',
   navbar: 'autorotate zoom download fullscreen',
-  time_anim: false
+  time_anim: false,
+  default_fov: 90
 });
 
 function getBasename() {

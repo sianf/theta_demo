@@ -33,6 +33,13 @@
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
     integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
 
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+  <!--<![endif]-->
+
   <!-- スタイルシート -->
   <link rel="stylesheet" href="/css/common.css">
   <link rel="stylesheet" href="/css/psv.css">
@@ -45,17 +52,36 @@
     <a class="pure-menu-heading" href="/">Panorama View</a>
   </div> <!-- header -->
 
-  <!-- PSVのプレースホルダ -->
-  <div id="viewer"></div>
+  <div class="content-wrapper pure-g">
 
-  <!-- サムネイル/リンク -->
-  <div class="thumbnail pure-g">
-    <div class="pure-u-1-3"><button class="pure-button pure-button-active" onclick="selectPsvMedia(1)">キッチン</button>
-    </div>
-    <div class="pure-u-1-3"><button class="pure-button pure-button-active" onclick="selectPsvMedia(2)">洗面台</button>
-    </div>
-    <div class="pure-u-1-3"><button class="pure-button pure-button-active" onclick="selectPsvMedia(3)">居間</button></div>
-  </div>
+    <div class="viewer-container pure-u-1 pure-u-md-18-24">
+      <!-- PSVのプレースホルダ -->
+      <div id="viewer"></div>
+    </div><!-- view container -->
+
+    <div class="links-container pure-u-1 pure-u-md-5-24">
+      <!-- サムネイル/リンク -->
+      <div class="links">
+        <div class="navigation"><button class="" onclick="selectPsvMedia(1)">1</button>
+        </div>
+        <div class="navigation"><button class="" onclick="selectPsvMedia(2)">2</button>
+        </div>
+        <div class="navigation"><button class="" onclick="selectPsvMedia(3)">3</button>
+        </div>
+        <div class="navigation"><button class="" onclick="selectPsvMedia(4)">4</button>
+        </div>
+        <div class="navigation"><button class="" onclick="selectPsvMedia(5)">5</button>
+        </div>
+        <div class="navigation"><button class="" onclick="selectPsvMedia(6)">6</button>
+        </div>
+        <div class="navigation"><button class="" onclick="selectPsvMedia(7)">7</button>
+        </div>
+        <div class="navigation"><button class="" onclick="selectPsvMedia(8)">8</button>
+        </div>
+      </div>
+    </div><!-- link container -->
+
+  </div><!-- content container -->
 
   <!-- スクリプト -->
   <script src="/js/psv.js"></script>

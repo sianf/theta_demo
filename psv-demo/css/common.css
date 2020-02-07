@@ -1,12 +1,42 @@
 /* common.css - 共通CSS */
 
-.thumbnail {
-    margin: 0 auto;
-    margin-top: 1rem;
-    margin-left: 1rem;
+body {
+    background-color: #fefefe;
 }
 
-.thumbnail button {
-    width: 30vw;
-    height: 5vh;
+.header {
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 5px #ccc;
+}
+
+.viewer-container {
+    padding-left: 1rem;
+}
+
+.links-container {
+    padding-left: 1rem;
+}
+
+.navigation {
+    width: 100%;
+}
+
+.links {
+    background-color: aliceblue;
+}
+
+.links button {
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+
+.links button:hover {
+    background-color: aqua;
 }
